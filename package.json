@@ -1,0 +1,27 @@
+{
+  "name": "playwright_ecommerce_ts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-playwright": "^2.10.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
