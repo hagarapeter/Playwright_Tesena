@@ -19,6 +19,7 @@ npx playwright test --project=api   # API tests only
 ```
 
 ## Structure
+```bash
 pages/
   BasePage.ts             # shared base class with common methods
   POManager.ts            # page object factory
@@ -35,10 +36,13 @@ api/
 fixtures/
   base.ts                 # extended Playwright test with fixture
 playwright.config.ts
+```
 
 ## Tech
+```bash
 - Playwright & TypeScript
 - Page Object Model with shared BasePage
 - Data-driven via TypeScript fixtures
 - API testing via native Playwright request context
 - CI/CD via GitHub Actions (triggered on push/PR)
+```
