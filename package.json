@@ -9,7 +9,9 @@
     "test:report": "npx playwright show-report",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug"
   },
   "keywords": [],
   "author": "",
