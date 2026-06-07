@@ -14,10 +14,10 @@ export class LoginPage {
   }
 
   async goTo() {
-    await this.page.goto("http://37.27.17.198:8084/en/login?back=http%3A%2F%2F37.27.17.198%3A8084%2Fen%2F");
+    await this.page.goto("http://37.27.17.198:8084/en/login");
   }
 
-  async validLogin(username: string, password: string) {
+  async Login(username: string, password: string) {
     await this.username.fill(username);
     await this.password.fill(password);
     await this.signInButton.click();
