@@ -11,9 +11,9 @@ npx playwright install chromium
 ## Run
 ```bash
 npm test                  # all tests headless
-npm run test:headed       # watch the browser
-npm run test:debug        # step through
-npm run report            # open HTML report
+npm run test:ui           # Playwright UI mode
+npm run test:report       # open HTML report
+npm run test:report       # open HTML report
 npx playwright test --project=e2e   # UI tests only
 npx playwright test --project=api   # API tests only
 ```
@@ -29,10 +29,10 @@ pages/
   CartPage.ts
   UserProfile.ts
 tests/
-  cart.spec.ts            # add to cart, verify items
+  product-order.spec.ts   # add to cart, verify items
   wishlist.spec.ts        # add to wishlist, remove from wishlist
 api/
-  users.api.spec.ts     # status codes, response body, response time
+  users.api.spec.ts       # status codes, response body, response time
 fixtures/
   base.ts                 # extended Playwright test with fixture
 playwright.config.ts
